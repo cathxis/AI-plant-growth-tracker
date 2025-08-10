@@ -420,4 +420,4 @@ st.markdown("</div>", unsafe_allow_html=True)
 
 # ---------------- Footer ----------------
 st.markdown("---")
-st.markdown("<div class='small-muted'>Made with ❤️ by Savan, Akash and Athul — PlantCareAI</div>", unsafe_allow_html=True)
+st.markdown("<div class='small-muted'>Made by Savariya,Niranjna,Ifa,Christeena — PlantCareAI</div>", unsafe_allow_html=True)
