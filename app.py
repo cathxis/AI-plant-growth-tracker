@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 from PIL import Image
-import random
 
 # ----------------- PAGE CONFIG -----------------
 st.set_page_config(
@@ -11,18 +10,34 @@ st.set_page_config(
     layout="wide"
 )
 
-# Custom CSS for attractive UI
+# Custom Dark Theme CSS
 st.markdown("""
 <style>
 .stApp {
-    background: linear-gradient(120deg, #e0f7e9, #f0fff4);
+    background-color: #000000;
+    color: #ffffff;
 }
 .card {
     padding: 20px;
     border-radius: 15px;
-    background: white;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    background: #1a1a1a;
+    color: white;
+    box-shadow: 0px 4px 15px rgba(255,255,255,0.1);
     margin-bottom: 20px;
+}
+input, textarea, select {
+    background-color: #333333 !important;
+    color: white !important;
+    border-radius: 8px !important;
+}
+.stButton>button {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border-radius: 8px;
+    border: none;
+}
+.stButton>button:hover {
+    background-color: #45a049 !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -66,8 +81,7 @@ ai_text = st.text_area("Describe your plant’s condition (e.g., 'My tomato plan
 
 if st.button("🧠 Get AI Recommendation"):
     if ai_text.strip():
-        # Fake AI logic (replace with real model if you have API key)
-        keywords = ["yellow", "dry", "drooping", "no sun"]
+        # Simulated AI logic
         recs = []
         if "yellow" in ai_text.lower():
             recs.append("🌿 Leaves yellow — consider adding balanced fertilizer.")
