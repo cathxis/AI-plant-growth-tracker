@@ -187,7 +187,7 @@ body, .stApp { background-color: #000000; color: #ffffff; }
 """, unsafe_allow_html=True)
 
 # ---------------- Header ----------------
-st.title("🌱 PlantCareAI — Smart Plant Growth Tracker")
+st.title("🌱 Planto— Smart Plant Growth Tracker")
 st.markdown("Add plants, log growth, upload photos, and get *smart, actionable care recommendations*.")
 
 # ---------------- Left column: Add plant ----------------
